@@ -1,13 +1,223 @@
+
+/* General Styles */
+
 body {
+  background-color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  width: 100%;
+  border: 1px solid #000;
+  filter: hue-rotate(340deg)
+}
+
+img.rounded {
+  border-radius: 8px;
+}
+
+main h2 {
+  font-size: 40px;
+  font-family: Baskerville, serif;
+}
+
+main h3 {
+  font-family: Baskerville, serif;
+  font-size: 28px;
+}
+
+main p, 
+main li {
+  font-family: Baskerville, serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.5em;
+  margin-bottom: 0em;
+}
+
+/* Header and Nav */
+
+header {
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 20px -20px;
+  color: #fff;
+  font-family: 'Gill Sans', serif;
+  font-size: 74px;
+  padding-top: 20px;
+  transition-duration: 0.6s;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff; 
+  font-family: Baskerville, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 20px 0 0;
+  transition-duration: 0.6s;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Main */
+
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Links */
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+main a:link    {color: #000}
+main a:visited {color: #000}
+main a:hover   {color: #000}
+
+/* Contact Form Design */
+
+form {
+  padding: 0;
+  font-family: Baskerville, serif;
+  font-size: 20px;
+  color: #000;
+}
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+form button {
+  padding: 15px 16px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  margin: 0 8px 50px 0;
+  transition-duration: 0.4s;
+}
+
+/* Styling Footer */
+
+footer {
+  background-color: #000;
+  margin-bottom: 40px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Groups and Items (Mobile First) */
+
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10 px;
+}
+
+/* Groups and Items (For Desktop) */
+
+@media all and (min-width: 800px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover,
+  header a h1:hover {
+    color: #50bfe6;
+  }
+
+  div ul li a:hover,
+  p a:hover {
+    color: #ff6eff;
+  }
+
+  form {
+    padding: 0 0 0 50px;
+  }
+
+  form button:hover {
+    background-color: #66ff66;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
