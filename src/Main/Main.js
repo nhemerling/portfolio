@@ -6,10 +6,10 @@ import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import './Main.css';
 
-export default function Main() {
+export default function Main(props) {
     return(
         <Switch>
-            <Route path='/' component={Home}></Route>
+            <Route exact path='/' component={Home}></Route>
             <Route path='/about' component={About}></Route>
             <Route path='/portfolio' component={Portfolio}></Route>
             <Route path='/contact' component={Contact}></Route>
