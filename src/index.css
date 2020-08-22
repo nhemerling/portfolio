@@ -107,6 +107,10 @@ main a:link    {color: #000}
 main a:visited {color: #000}
 main a:hover   {color: #000}
 
+.navbar__link--active {
+  color: #50bfe6;
+}
+
 /* Contact Form Design */
 
 form {
@@ -191,8 +195,7 @@ footer {
     margin-top: 14px;
   }
 
-  header nav ul li a:hover,
-  header a h1:hover {
+  .navbar__link:hover {
     color: #50bfe6;
   }
 
