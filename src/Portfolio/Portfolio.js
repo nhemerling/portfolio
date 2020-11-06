@@ -1,5 +1,4 @@
 import React from 'react';
-import nicoPortfolio from '../images/nicoBeardGlasses.jpg';
 import ConsiderateHomePage from '../images/ConsiderateHomePage.png';
 import BurntToastLandingPage from '../images/BurntToastLandingPage.png';
 import LangTrainLogin from '../images/LangTrainLogin.png';
