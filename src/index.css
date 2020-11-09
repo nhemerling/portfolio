@@ -28,7 +28,7 @@ main h3 {
   font-size: 28px;
 }
 
-main p, 
+main p,
 main li {
   font-family: Baskerville, serif;
   font-size: 20px;
@@ -50,7 +50,7 @@ header h1 {
   padding: 20px -20px;
   color: #fff;
   font-family: 'Gill Sans', serif;
-  font-size: 74px;
+  font-size: 60px;
   padding-top: 20px;
   transition-duration: 0.6s;
 }
@@ -71,7 +71,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #fff; 
+  color: #fff;
   font-family: Baskerville, serif;
   font-size: 20px;
   font-weight: bold;
@@ -107,8 +107,13 @@ main a:link    {color: #000}
 main a:visited {color: #000}
 main a:hover   {color: #000}
 
-.navbar__link--active {
+header nav ul li a:hover {
   color: #50bfe6;
+}
+
+div ul li a:hover,
+p a:hover {
+  color: #ff6eff;
 }
 
 /* Contact Form Design */
@@ -119,7 +124,7 @@ form {
   font-size: 20px;
   color: #000;
 }
-form input, 
+form input,
 form textarea {
   width: 100%;
   margin-bottom: 20px;
@@ -137,6 +142,13 @@ form button {
   color: #000;
   margin: 0 8px 50px 0;
   transition-duration: 0.4s;
+}
+
+form button:hover {
+  background-color: #66ff66;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Styling Footer */
@@ -195,24 +207,8 @@ footer {
     margin-top: 14px;
   }
 
-  .navbar__link:hover {
-    color: #50bfe6;
-  }
-
-  div ul li a:hover,
-  p a:hover {
-    color: #ff6eff;
-  }
-
   form {
     padding: 0 0 0 50px;
-  }
-
-  form button:hover {
-    background-color: #66ff66;
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
   }
 
   .wrapper {

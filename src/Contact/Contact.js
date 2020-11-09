@@ -17,13 +17,13 @@ export default function Contact(props) {
                 <div className="item item-double">
                     <form action="https://formspree.io/mdowlvep" method="POST">
                         <label htmlFor="user-name">Name:</label>
-                        <input id="user-name" type="text" name="name" />
+                        <input id="user-name" type="text" name="name" required/>
 
                         <label htmlFor="user-email">Email:</label>
-                        <input id="user-email" type="email" name="_replyto" />
+                        <input id="user-email" type="email" name="_replyto" required/>
 
                         <label htmlFor="user-message">Message:</label>
-                        <textarea id="user-message" name="message"></textarea>
+                        <textarea id="user-message" name="message" required></textarea>
                         <button type="submit">Send</button>
                     </form>
                 </div>
