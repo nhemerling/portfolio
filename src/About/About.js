@@ -10,7 +10,7 @@ export default function About(props) {
                     <p>My favorite thing about coding is solving logical problems.
                         I have always loved the rush of adrenaline I get when trying to solve puzzles.
                         Coding gives me that rush and I'd love to work on a team with great programmers who feel the same.</p>
-                    <p>I also have many years of experience in theater as an actor and comedian,
+                    <p>I also have many years of experience in theater as an actor and comedian
                         and love bringing my sense of humor and story-telling to the projects I work on,
                         as well as the spaces I work in. Reach out if you like to have fun while building
                         your website!</p>

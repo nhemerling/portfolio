@@ -11,7 +11,7 @@ export default function Home(props) {
                 </div>
                 <div className="item item-double">
                     <p className="intro">Hey! I'm Nicholas Hemerling.</p>
-                    <p>I'm a software developer studying at Thinkful, and am based in Lafayette, California.
+                    <p>I'm a software developer studying at Thinkful and am based in Lafayette, California.
                         I graduated with a BA from Middlebury College and
                         have also spent two years training at French theater school École Philippe Gaulier.</p>
                 </div>
